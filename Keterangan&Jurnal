@@ -1,0 +1,39 @@
+#Keterangan
+1-Konversi RGB ke Grayscale: Program ini berfungsi untuk mengubah citra berwarna yang memiliki tiga kanal (Red, Green, Blue) menjadi citra satu kanal dengan tingkatan abu-abu. Secara teknis, program mengambil nilai intensitas dari ketiga kanal tersebut dan menggabungkannya menggunakan bobot tertentu atau nilai rata-rata guna menyederhanakan data citra tanpa kehilangan struktur penting dari objek yang ada di dalamnya.
+2-Kuantisasi Citra (m-bit): Program ini bertujuan untuk mengurangi kedalaman bit (bit depth) suatu citra, misalnya dari standar 8-bit menjadi nilai yang lebih rendah seperti 2-bit atau 4-bit. Melalui proses ini, jumlah variasi warna yang tersedia dipangkas secara drastis dengan cara mengelompokkan nilai piksel asli ke dalam beberapa level intensitas yang terbatas, sehingga menciptakan efek visual seperti poster (posterization).
+3-Konversi Grayscale ke Biner: Program ini menerapkan teknik ambang batas atau thresholding untuk mengubah citra abu-abu menjadi hanya dua warna saja, yaitu hitam pekat (0) dan putih pekat (255). Dengan menentukan satu nilai batas tertentu, program akan memaksa setiap piksel menjadi putih jika nilainya di atas ambang dan menjadi hitam jika di bawahnya, yang sangat berguna dalam proses pemisahan objek (segmentation) dari latar belakang.
+4-PengaturanKecerahan (Brightness): Program ini bekerja dengan cara melakukan operasi penjumlahan atau pengurangan nilai konstanta pada setiap piksel di seluruh citra secara merata. Jika nilai piksel ditambah, maka citra akan terlihat lebih terang, sedangkan jika dikurangi citra akan tampak lebih gelap, di mana program juga memastikan agar hasil perhitungan tetap berada dalam rentang valid 0 hingga 255 (proses clipping).
+5-Pengaturan Kontras (Contrast): Program ini menggunakan operasi perkalian terhadap nilai intensitas piksel untuk memperlebar atau mempersempit rentang antara bagian paling gelap dan bagian paling terang dalam sebuah gambar. Dengan mengalikan nilai piksel dengan faktor pengali (gain) lebih dari satu, perbedaan warna akan menjadi lebih kontras dan tajam, sedangkan pengali di bawah satu akan membuat gambar terlihat lebih pudar dan merata keabu-abuannya.
+6-Pembuatan Histogram Citra: Program ini berfungsi sebagai alat analisis statistik yang memetakan distribusi frekuensi kemunculan setiap nilai derajat keabuan (0-255) ke dalam sebuah grafik batang. Grafik ini memberikan informasi penting mengenai kualitas citra, di mana kita dapat mengetahui secara visual apakah sebuah gambar memiliki pencahayaan yang dominan gelap, terang, atau memiliki distribusi warna yang tidak merata.
+7-Pemerataan Histogram (Histogram Equalization): Program ini merupakan teknik perbaikan citra otomatis yang menggunakan fungsi distribusi kumulatif untuk menyebarkan kembali nilai intensitas piksel yang menumpuk di satu area histogram agar tersebar secara merata ke seluruh rentang derajat keabuan. Hasil akhir dari program ini adalah citra dengan kontras yang meningkat secara signifikan, sehingga detail-detail kecil yang sebelumnya tersembunyi pada area yang terlalu gelap atau terlalu terang menjadi lebih jelas terlihat.
+
+#Jurnal
+- Identifikasi Penyakit Tanaman Citra Daun Cabe Menggunakan Gray Level Co-Occurrencce Matrix Dan Support Vector Machine 
+
+Penulis: Yampi R. Kaesmetan dan Irene Oktaviani Duka.
+
+Link: https://journal.arteii.or.id/index.php/Neptunus/article/download/86/117
+
+- Analisis Perbandingan Metode Pengenalan Wajah untuk Absensi Online dengan KNN dan Local Binary Pattern Histogram (LBPH) 
+
+Penulis: Rifa Zaini Agnes dan Yuni Yamasari.
+
+Link: https://ejournal.unesa.ac.id/index.php/jinacs/article/download/58900/45843
+
+- Image Enhancement and Modification Application Using Sharpening, Grayscale, and Additional Visual Effects on Android
+
+Penulis: M. Khalil Gibran, Mukhamad Rizky Akbar, dan Andika Wahyudi.
+
+Link: https://www.researchgate.net/publication/399957441_Image_Enhancement_and_Modification_Application_Using_Sharpening_Grayscale_and_Additional_Visual_Effects_on_Android
+
+- Pengolahan Citra Digital Perbandingan Metode Histogram Equalization dan Spesification pada Citra Abu-Abu 
+
+Penulis: Yelly N. Nabuasa.
+
+Link: https://ejurnal.undana.ac.id/index.php/jicon/article/download/889/767/
+
+- Penerapan Teknik Adaptive dan Histogram Equalization dalam Pengolahan Citra 
+
+Penulis: Muhammad Naufal, Gustian Angga Firmansyah, Ni Made Kirei Kharisma Handayani, dan Harun Al Azies.
+
+Link: https://scholar.ummetro.ac.id/index.php/IlmuKomputer/article/download/5345/2503
